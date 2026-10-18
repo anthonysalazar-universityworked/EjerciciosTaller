@@ -69,7 +69,7 @@ public class FrecuenciasCardiacas {
         LocalDate nacimiento = LocalDate.of(anioNacimiento, mesNacimiento, diaNacimiento);
         return Period.between(nacimiento, LocalDate.now()).getYears();
     }
-
+    // Cálculo de la frecuencia cardíaca máxima basada en la edad actual
     public int calcularFrecuenciaCardiacaMaxima() {
         return FRECUENCIA_BASE - calcularEdad();
     }

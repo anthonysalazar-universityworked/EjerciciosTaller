@@ -39,11 +39,11 @@ public class Empleado {
             this.salarioMensual = salarioMensual;
         }
     }
-
+    // Calcula y devuelve el salario anual (12 meses)
     public double obtenerSalarioAnual() {
         return salarioMensual * 12;
     }
-
+    // Aplica un porcentaje de aumento al salario mensual
     public void aplicarAumento(double porcentaje) {
         establecerSalarioMensual(salarioMensual * (1 + porcentaje / 100));
     }

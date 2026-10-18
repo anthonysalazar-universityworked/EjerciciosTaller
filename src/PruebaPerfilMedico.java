@@ -17,7 +17,7 @@ public class PruebaPerfilMedico {
         int anio = (int) leerNumero(entrada, "Año de nacimiento: ");
         double altura = leerNumero(entrada, "Altura (cm): ");
         double peso = leerNumero(entrada, "Peso (kg): ");
-
+        // Intento de creación del perfil médico y validación integral de la fecha de nacimiento
         PerfilMedico perfil;
         try {
             perfil = new PerfilMedico(nombre, apellido, sexo, dia, mes, anio, altura, peso);

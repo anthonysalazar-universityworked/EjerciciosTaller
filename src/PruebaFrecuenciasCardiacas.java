@@ -8,6 +8,7 @@ public class PruebaFrecuenciasCardiacas {
     private static final String TITULO = "Ejercicio 3.16 - Frecuencias cardiacas";
 
     public static void main(String[] args) {
+        // Captura de datos personales y fecha de nacimiento desde la interfaz gráfica
         String nombre = leerTexto("Primer nombre:");
         String apellido = leerTexto("Apellido:");
         int mes = leerEntero("Mes de nacimiento (1-12):");
@@ -15,6 +16,7 @@ public class PruebaFrecuenciasCardiacas {
         int anio = leerEntero("Año de nacimiento:");
 
         FrecuenciasCardiacas persona;
+        // Intento de instanciación del objeto y validación de la fecha ingresada
         try {
             persona = new FrecuenciasCardiacas(nombre, apellido, mes, dia, anio);
             persona.calcularEdad(); // valida que la fecha sea real
